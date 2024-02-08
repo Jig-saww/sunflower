@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 1000px;
+  background-image: url("image/crumpled.jpg");
+  background-position: center center;
+}
+.paper {
+  background-image: url("image/pxfuel.jpg");
+  background-size: 500px;
+  background-position: center center;
+  padding: 50px 100px;
+  transform: rotateZ(-5deg);
+  box-shadow: 1px 15px 20px 0px rgb(0, 0, 0);
+  position: absolute;
+  border-radius: 20px;
+  
+}
+.paper.heart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  border-radius: 50%;
+}
+.paper.image {
+  padding: 10px;
+}
+.paper.image p {
+  font-size: 30px;
+}
+img {
+  max-height: 300px;
+  width: 100%;
+  user-select: none;
+  border-radius: 20px;
+  box-shadow: 20px;
+}
+.paper.heart::after {
+  content: "";
+  background-image: url('https://cdn.pixabay.com/photo/2016/03/31/19/25/cartoon-1294994__340.png');
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 150px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+.paper.red {
+/*   filter: hue-rotate(90deg); */
+}
+.paper:nth-of-type(3n) {
+  background-position: left top;
+}
+.paper:nth-of-type(3n) {
+/*   filter: hue-rotate(200deg); */
+}
+p {
+  font-family: 'Zeyada';
+  font-size: 50px;
+  color: rgb(9, 15, 110);
+  opacity: 2;
+  user-select: none;
+  
+}
